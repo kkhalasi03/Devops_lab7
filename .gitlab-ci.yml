@@ -1,9 +1,12 @@
 image: python:3.10
+
 stages:
- - test
+  - test
+
 before_script:
- - pip install pytest
+  - pip install pytest
+
 test_job:
- stage: test
- script:
- - pytest
+  stage: test
+  script:
+    - pytest
